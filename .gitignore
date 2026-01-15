@@ -1,0 +1,51 @@
+# Sistema operativo / editor
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Entornos
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# Herramientas y pruebas
+.mypy_cache/
+.pytest_cache/
+.coverage*
+coverage.xml
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+logs/
+
+# MLflow
+mlruns/
+
+# Datos: ignorar todo excepto data/raw
+data/**
+!data/raw/
+!data/raw/**
+
+# Configuración/secretos
+.env
+.env.*.local
+

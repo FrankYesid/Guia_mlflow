@@ -37,6 +37,8 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
   - scikit-learn
   - numpy
   - scipy
+  - sweetviz
+  - jupyter
 
 ## Instalación
 1. Crear entorno virtual (Windows PowerShell):
@@ -61,6 +63,18 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
    ```
    Abrir `http://localhost:5000` para explorar ejecuciones, métricas y artefactos.
 
+## Notebooks
+- Exploración descriptiva:
+  - [01_data_overview.ipynb](file:///d:/GitHub/Guia_mlflow/notebooks/01_data_overview.ipynb)
+  - Muestra dimensiones, encabezados, describe columnas, tipos y valores nulos.
+- Reporte automatizado con Sweetviz:
+  - [02_sweetviz_report.ipynb](file:///d:/GitHub/Guia_mlflow/notebooks/02_sweetviz_report.ipynb)
+  - Genera HTML en [telco_churn_sweetviz.html](file:///d:/GitHub/Guia_mlflow/notebooks/reports/telco_churn_sweetviz.html)
+- Abrir cuadernos:
+  ```bash
+  jupyter notebook notebooks/
+  ```
+
 ## MLflow: Detalles de Tracking
 - Experimento: `churn_telco` (configurado en `settings.py`).
 - Parámetros: `model`, `test_size`, `random_state`.
@@ -81,6 +95,14 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
 - Pruebas unitarias y CI/CD para reproducibilidad.
 - Más detalles en: [proximos_pasos.md](file:///d:/GitHub/Guia_mlflow/docs/proximos_pasos.md)
 
+## Ignorados (.gitignore)
+- Archivo: [.gitignore](file:///d:/GitHub/Guia_mlflow/.gitignore)
+- Incluye reglas para:
+  - Artefactos MLflow (`mlruns/`) y logs.
+  - Entornos virtuales (`.venv/`, `venv/`, etc.).
+  - Archivos temporales de Python (`__pycache__/`, bytecode).
+  - IDEs y editores (`.vscode/`, `.idea/`).
+  - Datos: ignora `data/**` pero versiona `data/raw/**`.
+
 ## Licencia
 - Este proyecto está bajo la licencia MIT. Ver [LICENSE](file:///d:/GitHub/Guia_mlflow/LICENSE).
-

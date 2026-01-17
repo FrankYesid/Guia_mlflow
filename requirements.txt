@@ -5,3 +5,4 @@ numpy>=1.23,<2.0
 scipy>=1.9,<2.0
 sweetviz>=2.1.4,<3.0
 jupyter>=1.0,<2.0
+ydata-profiling>=4.6,<5.0

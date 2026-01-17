@@ -44,8 +44,8 @@ mlruns/
 data/**
 !data/raw/
 !data/raw/**
+!data/processed/.gitkeep
 
 # Configuración/secretos
 .env
 .env.*.local
-

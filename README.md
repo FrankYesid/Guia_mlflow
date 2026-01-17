@@ -62,6 +62,11 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
    mlflow ui --port 5000
    ```
    Abrir `http://localhost:5000` para explorar ejecuciones, métricas y artefactos.
+3. Preprocesamiento y guardado de datos:
+   ```bash
+   python -m src.interfaces.cli.preprocess
+   ```
+   Genera `data/processed/telco_churn_clean.csv` con limpieza básica.
 
 ## Notebooks
 - Exploración descriptiva:
@@ -102,7 +107,7 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
   - Entornos virtuales (`.venv/`, `venv/`, etc.).
   - Archivos temporales de Python (`__pycache__/`, bytecode).
   - IDEs y editores (`.vscode/`, `.idea/`).
-  - Datos: ignora `data/**` pero versiona `data/raw/**`.
+  - Datos: ignora `data/**` pero versiona `data/raw/**` y conserva `data/processed/.gitkeep`.
 
 ## Licencia
 - Este proyecto está bajo la licencia MIT. Ver [LICENSE](file:///d:/GitHub/Guia_mlflow/LICENSE).

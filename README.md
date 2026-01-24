@@ -111,3 +111,5 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
 
 ## Licencia
 - Este proyecto está bajo la licencia MIT. Ver [LICENSE](file:///d:/GitHub/Guia_mlflow/LICENSE).
+
+pendiente actualizar e2e....

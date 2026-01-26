@@ -111,3 +111,29 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
 
 ## Licencia
 - Este proyecto está bajo la licencia MIT. Ver [LICENSE](file:///d:/GitHub/Guia_mlflow/LICENSE).
+
+## Solución de problemas (Windows)
+- Error de acceso denegado al eliminar/actualizar archivos de paquetes (os error 5/32):
+  - Cierra procesos que usan el entorno: Jupyter/VS Code/Python.
+  - En PowerShell:
+    ```powershell
+    Get-Process python, jupyter, ipykernel, code -ErrorAction SilentlyContinue
+    Stop-Process -Name python, jupyter, ipykernel, code -Force -ErrorAction SilentlyContinue
+    ```
+  - Desactiva el entorno y reinstala:
+    ```powershell
+    deactivate
+    cd d:\GitHub\Guia_mlflow
+    Remove-Item .venv -Recurse -Force
+    python -m venv .venv
+    .\.venv\Scripts\Activate.ps1
+    python -m pip install --upgrade pip
+    pip install -r requirements.txt
+    ```
+- Instalación con uv (si usas uv):
+  - Forzar copia en lugar de hardlink:
+    ```powershell
+    $env:UV_LINK_MODE = "copy"
+    uv pip install -r requirements.txt
+    ```
+  - Si un archivo sigue bloqueado, reinicia el equipo o excluye temporalmente `.venv` en el antivirus.

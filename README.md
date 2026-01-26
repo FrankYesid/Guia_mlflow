@@ -112,6 +112,7 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
 ## Licencia
 - Este proyecto está bajo la licencia MIT. Ver [LICENSE](file:///d:/GitHub/Guia_mlflow/LICENSE).
 
+<<<<<<< HEAD
 ## Solución de problemas (Windows)
 - Error de acceso denegado al eliminar/actualizar archivos de paquetes (os error 5/32):
   - Cierra procesos que usan el entorno: Jupyter/VS Code/Python.
@@ -137,3 +138,6 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
     uv pip install -r requirements.txt
     ```
   - Si un archivo sigue bloqueado, reinicia el equipo o excluye temporalmente `.venv` en el antivirus.
+=======
+pendiente actualizar e2e....
+>>>>>>> aa625a19b0bf6df52df2d8e8427311b2fe362d5d

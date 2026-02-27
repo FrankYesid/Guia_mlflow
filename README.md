@@ -1,4 +1,4 @@
-# Guia MLflow: Proyecto Churn Telco
+ll# Guia MLflow: Proyecto Churn Telco
 
 Este proyecto implementa un flujo de trabajo de Machine Learning para predicción de churn de clientes de telecomunicaciones usando MLflow, organizado con una arquitectura hexagonal para separar dominio, aplicación, infraestructura e interfaces.
 
@@ -139,5 +139,4 @@ Este proyecto implementa un flujo de trabajo de Machine Learning para predicció
     ```
   - Si un archivo sigue bloqueado, reinicia el equipo o excluye temporalmente `.venv` en el antivirus.
 =======
-pendiente actualizar e2e....
->>>>>>> aa625a19b0bf6df52df2d8e8427311b2fe362d5d
+actualizar...
